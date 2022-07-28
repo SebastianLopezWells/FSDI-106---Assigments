@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>Intro</title>
+  </head>
+  <body>
+    <h1>Welcome to my pTask Manager</h1>
+    <main class="container">
+      <section class="left">
+        <h2>To do</h2>
+        <div id="Cards"></div>
+        <button id="hideBTN" class="btn btn-primary">Hide</button>
+      </section>
+      <section class="right form-container">
+        <div class="form-container">
+          <h2>Form</h2>
+
+          <div class="form-group">
+            <label>Important</label>
+            <i class="fa-regular fa-star" id="Important"></i>
+          </div>
+
+          <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" id="txtTitle" />
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <textarea rows="3" id="txtDescription"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Due Date</label>
+            <input type="datetime-local" class="form-control" id="txtDueDate" />
+          </div>
+
+          <div class="form-group">
+            <label>Color</label>
+            <input type="color" class="form-control" id="txtColor" />
+          </div>
+          <div class="form-group">
+            <label>Emoji</label>
+            <input type="text" class="form-control" id="txtEmoji" />
+          </div>
+
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" class="form-control" id="txtLocation" />
+          </div>
+
+          <div class="form-group">
+            <label>Status</label>
+            <select id="txtStatus">
+              <option value="new">New</option>
+              <option value="Progress">In Progress</option>
+              <option value="Blocked">Blocked</option>
+              <option value="Paused">Paused</option>
+              <option value="Removed">Removed</option>
+              <option value="Done">Done</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Notification</label>
+            <input type="checkbox" id="notification" />
+          </div>
+          <button type="submit" id="btnSave" class="btn btn-primary">
+            Save
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./JavaScript/task.js"></script>
+    <script type="text/javascript" src="./JavaScript/main.js"></script>
+  </body>
+</html>
